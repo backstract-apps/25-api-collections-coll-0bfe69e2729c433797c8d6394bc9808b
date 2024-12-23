@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: 25-api-collections-coll-0bfe69e2729c433797c8d6394bc9808b-depl
+  labels:
+    app: 25-api-collections-coll-0bfe69e2729c433797c8d6394bc9808b
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: 25-api-collections-coll-0bfe69e2729c433797c8d6394bc9808b
+  template:
+    metadata:
+      labels:
+        app: 25-api-collections-coll-0bfe69e2729c433797c8d6394bc9808b
+    spec:
+      containers:
+        - name: 25-api-collections-coll-0bfe69e2729c433797c8d6394bc9808b
+          image: 216084506783.dkr.ecr.ap-south-1.amazonaws.com/backstract_apps:25-api-collections-coll-0bfe69e2729c433797c8d6394bc9808b
+          imagePullPolicy: Always
+          ports:
+            - containerPort: 9047

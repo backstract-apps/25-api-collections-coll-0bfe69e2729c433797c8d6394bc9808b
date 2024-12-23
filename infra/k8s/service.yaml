@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: 25-api-collections-coll-0bfe69e2729c433797c8d6394bc9808b-srv
+spec:
+  selector:
+    app: 25-api-collections-coll-0bfe69e2729c433797c8d6394bc9808b
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 9047
+  type: ClusterIP
